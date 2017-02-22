@@ -28,20 +28,21 @@
                                 }
                             }
                         }
-                    },
-                    "contentobject": {
-                        "type": "object"
-                    },
-                    "article": {
-                        "type": "object"
-                    },
-                    "block": {
-                        "type": "object"
-                    },
-                    "component": {
-                        "type": "object"
                     }
+                },
+                "contentobject": {
+                    "type": "object"
+                },
+                "article": {
+                    "type": "object"
+                },
+                "block": {
+                    "type": "object"
+                },
+                "component": {
+                    "type": "object"
                 }
             }
         }
     }
+}
