@@ -14,28 +14,34 @@
                     "type": "object",
                     "properties": {
                         "_menuBackground": {
-                            "type": "string",
-                            "required": true,
-                            "default": "",
-                            "inputType": "Asset:image",
-                            "validators": ["required"],
-                            "title": "Menu page background image"
+                            "type": "object",
+                            "required": false,
+                            "legend": "Menu Background",
+                            "properties": {
+                                "_link": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "",
+                                    "inputType": "Asset:image",
+                                    "validators": ["required"],
+                                    "title": "Menu page background image"
+                                }
+                            }
                         }
+                    },
+                    "contentobject": {
+                        "type": "object"
+                    },
+                    "article": {
+                        "type": "object"
+                    },
+                    "block": {
+                        "type": "object"
+                    },
+                    "component": {
+                        "type": "object"
                     }
-                },
-                "contentobject": {
-                    "type": "object"
-                },
-                "article": {
-                    "type": "object"
-                },
-                "block": {
-                    "type": "object"
-                },
-                "component": {
-                    "type": "object"
                 }
             }
         }
     }
-}
