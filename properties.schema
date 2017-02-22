@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "config": {
+        "type": "object"
+      },
+      "properties": {
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "_blockSwap": {
+              "type": "boolean",
+              "legend": "Block swap",
+              "required": true,
+              "title": "Set to true to swap the layouts of components within a block",
+              "inputType": {
+                "type": "Boolean",
+                "options": [
+                  false,
+                  true
+                ]
+              },
+              "help": "Enable Block Swap for this block"
+            }
+          }
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
