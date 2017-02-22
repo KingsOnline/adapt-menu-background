@@ -3,7 +3,7 @@ define([ "coreJS/adapt" ], function(Adapt) {
     var Adapt = require('coreJS/adapt');
     var Backbone = require('backbone');
 
-    var blockSwap = Backbone.View.extend({
+    var menuBackground = Backbone.View.extend({
 
         className: "extension",
 
@@ -30,9 +30,11 @@ define([ "coreJS/adapt" ], function(Adapt) {
         }
     }
 
-    Adapt.on("app:dataReady", function() {
-        loopBlocks(this);
+    Adapt.on("menuView:ready", function() {
+      console.log(Adapt.course.get('_menuBackground')._link);
+      var image = Adapt.course.get('_menuBackground')._link;
+      $('.menu-header').css('background', 'url(' + image + ')');
     });
 
-    return blockSwap;
+    return menuBackground;
 });

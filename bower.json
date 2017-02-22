@@ -1,16 +1,16 @@
 {
-  "name": "blockSwap",
-  "version": "0.0.9",
+  "name": "adapt-menu-background",
+  "version": "0.0.1",
   "homepage": "https://github.com/simondate/adapt-block-swap",
   "issues": "https://github.com/simondate/adapt-block-swap/issues",
-  "displayName" : "Block swap",
+  "displayName" : "Menu Background",
   "extension" : "extension",
-  "description": "An extension that allows for the layout of two components within a block to be swapped on mobile view.",
-  "main": "/js/adapt-block-swap.js",
+  "description": "Allows image to be used as a background",
+  "main": "/js/adapt-menu-background.js",
   "keywords": [
     "adapt-plugin",
     "adapt-extension"
   ],
   "license": "GPLv3",
-  "targetAttribute": "_blockSwap"
+  "targetAttribute": "_menuBackground"
 }
