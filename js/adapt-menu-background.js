@@ -33,7 +33,7 @@ define([ "coreJS/adapt" ], function(Adapt) {
     Adapt.on("menuView:ready", function() {
       console.log(Adapt.course.get('_menuBackground')._link);
       var image = Adapt.course.get('_menuBackground')._link;
-      $('.menu-header').css('background', 'url(' + image + ')');
+      $('.menu-container-inner').css('background', 'url(' + image + ')');
     });
 
     return menuBackground;
