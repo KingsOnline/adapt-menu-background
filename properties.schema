@@ -1,41 +1,41 @@
 {
-  "type": "object",
-  "$schema": "http://json-schema.org/draft-04/schema",
-  "id": "http://jsonschema.net",
-  "properties": {
-    "pluginLocations": {
-      "type": "object",
-      "required": true,
-      "config": {
-        "type": "object"
-      },
-      "properties": {
-        "course": {
-          "type": "object",
-          "properties": {
-            "_menuBackground": {
-              "type":"string",
-              "required":true,
-              "default": "",
-              "inputType": "Asset:other",
-              "validators": ["required"],
-              "title": "Menu page background image"
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://jsonschema.net",
+    "properties": {
+        "pluginLocations": {
+            "type": "object",
+            "required": true,
+            "properties": {
+                "config": {
+                    "type": "object"
+                },
+                "course": {
+                    "type": "object",
+                    "properties": {
+                        "_menuBackground": {
+                            "type": "string",
+                            "required": true,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": ["required"],
+                            "title": "Menu page background image"
+                        }
+                    }
+                },
+                "contentobject": {
+                    "type": "object"
+                },
+                "article": {
+                    "type": "object"
+                },
+                "block": {
+                    "type": "object"
+                },
+                "component": {
+                    "type": "object"
+                }
             }
-          }
-        },
-        "contentobject": {
-          "type": "object"
-        },
-        "article": {
-          "type": "object"
-        },
-        "block": {
-          "type": "object"
-        },
-        "component": {
-          "type": "object"
         }
-      }
     }
-  }
 }
