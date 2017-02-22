@@ -11,7 +11,17 @@
       },
       "properties": {
         "course": {
-          "type": "object"
+          "type": "object",
+          "properties": {
+            "_menuBackground": {
+              "type":"string",
+              "required":true,
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": ["required"],
+              "help": "Select the image you wish for the menu"
+            }
+          }
         },
         "contentobject": {
           "type": "object"
@@ -20,23 +30,7 @@
           "type": "object"
         },
         "block": {
-          "type": "object",
-          "properties": {
-            "_blockSwap": {
-              "type": "boolean",
-              "legend": "Block swap",
-              "required": true,
-              "title": "Set to true to swap the layouts of components within a block",
-              "inputType": {
-                "type": "Boolean",
-                "options": [
-                  false,
-                  true
-                ]
-              },
-              "help": "Enable Block Swap for this block"
-            }
-          }
+          "type": "object"
         },
         "component": {
           "type": "object"
