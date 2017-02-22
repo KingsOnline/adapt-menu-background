@@ -17,9 +17,9 @@
               "type":"string",
               "required":true,
               "default": "",
-              "inputType": "Asset:image",
+              "inputType": "Asset:other",
               "validators": ["required"],
-              "help": "Select the image you wish for the menu"
+              "title": "Menu page background image"
             }
           }
         },

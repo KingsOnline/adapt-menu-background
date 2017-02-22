@@ -1,10 +1,11 @@
 {
   "name": "adapt-menu-background",
-  "version": "0.0.1",
+  "version": "0.1.0",
+    "framework": "^2.0.0",
   "homepage": "https://github.com/simondate/adapt-block-swap",
   "issues": "https://github.com/simondate/adapt-block-swap/issues",
   "displayName" : "Menu Background",
-  "extension" : "extension",
+  "extension" : "menu background",
   "description": "Allows image to be used as a background",
   "main": "/js/adapt-menu-background.js",
   "keywords": [
