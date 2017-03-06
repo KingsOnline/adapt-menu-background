@@ -16,6 +16,7 @@ define(["coreJS/adapt"], function(Adapt) {
         $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuBackground')._link + ')');
         $('.menu-container-inner').css('padding-bottom', '15%');
         $('.menu-container-inner').css('background-size', 'cover');
+        $('.menu-container-inner').css('background-position-y', '200px');
     });
 
     return menuBackground;
