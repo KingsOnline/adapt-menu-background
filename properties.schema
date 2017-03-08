@@ -20,7 +20,7 @@
               "properties": {
                 "_menuHeaderLink": {
                   "type": "string",
-                  "required": true,
+                  "required": false,
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
@@ -28,7 +28,7 @@
                 },
                 "_backgroundLink": {
                   "type": "string",
-                  "required": true,
+                  "required": false,
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
