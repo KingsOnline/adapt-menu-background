@@ -31,9 +31,10 @@
                       "title": "Menu header image"
                     },
                     "_applyToPage": {
-                      "type": "Checkbox",
+                      "default": false,
+                      "inputType": "Checkbox",
+                      "type": "boolean",
                       "required": false,
-                      "default": "false",
                       "title": "Apply to page too?"
                     }
                   }
