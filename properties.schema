@@ -19,11 +19,22 @@
               "legend": "Menu Background",
               "properties": {
                 "_menuHeaderLink": {
-                  "type": "string",
+                  "type": "object",
                   "required": false,
-                  "default": "",
-                  "inputType": "Asset:image",
-                  "title": "Menu header image"
+                  "legend": "Menu Header background",
+                  "_link": {
+                    "type": "string",
+                    "required": false,
+                    "default": "",
+                    "inputType": "Asset:image",
+                    "title": "Menu header image"
+                  },
+                  "_applyToPage": {
+                    "type": "Checkbox",
+                    "required": false,
+                    "default": "false",
+                    "title": "Apply to page too?"
+                  }
                 },
                 "_backgroundLink": {
                   "type": "string",
