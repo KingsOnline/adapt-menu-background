@@ -18,9 +18,9 @@ define(["coreJS/adapt"], function(Adapt) {
         }
         if (Adapt.course.get('_menuBackground')._backgroundLink != undefined || Adapt.course.get('_menuBackground')._backgroundLink === "") {
             $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuBackground')._backgroundLink + ')');
-            $('.menu-container-inner').css('padding-bottom', '15%');
+            $('.menu-container-inner').css('padding-bottom', '22%');
             $('.menu-container-inner').css('background-size', 'cover');
-            $('.menu-container-inner').css('background-position-y', '200px');
+            $('.menu-container-inner').css('background-position-y', '300px');
         }
     });
 
