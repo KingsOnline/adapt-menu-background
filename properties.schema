@@ -1,48 +1,63 @@
 {
-    "type": "object",
-    "$schema": "http://json-schema.org/draft-04/schema",
-    "id": "http://jsonschema.net",
-    "properties": {
-        "pluginLocations": {
-            "type": "object",
-            "required": true,
-            "properties": {
-                "config": {
-                    "type": "object"
-                },
-                "course": {
-                    "type": "object",
-                    "properties": {
-                        "_menuBackground": {
-                            "type": "object",
-                            "required": false,
-                            "legend": "Menu Background",
-                            "properties": {
-                                "_link": {
-                                    "type": "string",
-                                    "required": true,
-                                    "default": "",
-                                    "inputType": "Asset:image",
-                                    "validators": ["required"],
-                                    "title": "Menu page background image"
-                                }
-                            }
-                        }
-                    }
-                },
-                "contentobject": {
-                    "type": "object"
-                },
-                "article": {
-                    "type": "object"
-                },
-                "block": {
-                    "type": "object"
-                },
-                "component": {
-                    "type": "object"
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_backgroundLink": {
+              "type": "object",
+              "required": false,
+              "legend": "Menu Background",
+              "properties": {
+                "_link": {
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "validators": ["required"],
+                  "title": "Background for the page"
                 }
+              }
+            },
+            "_menuHeaderLink": {
+              "type": "object",
+              "required": false,
+              "legend": "Menu Background",
+              "properties": {
+                "_link": {
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "validators": ["required"],
+                  "title": "Background for the header"
+                }
+              }
             }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
         }
+      }
     }
+  }
 }

@@ -1,2 +1,5 @@
 // To go in blocks.json
-"_blockSwap" : true
+"_menuBackground": {
+  "_menuHeaderLink": "course/en/images/origami-menu-one-header.jpg",
+  "_backgroundLink": "course/en/images/origami-menu-one.jpg"
+}
