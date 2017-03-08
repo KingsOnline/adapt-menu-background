@@ -12,16 +12,16 @@ define(["coreJS/adapt"], function(Adapt) {
 
 
     Adapt.on("menuView:ready", function() {
-        if (Adapt.course.get('_menuBackground')._menuHeaderLink != undefined) {
+      console.log(Adapt.course.get('_menuBackground')._menuHeaderLink);
+        if (Adapt.course.get('_menuBackground')._menuHeaderLink != undefined || Adapt.course.get('_menuBackground')._menuHeaderLink === "") {
             $('.menu-header').css('background', 'url(' + Adapt.course.get('_menuBackground')._menuHeaderLink + ')');
         }
-        if (Adapt.course.get('_menuBackground')._backgroundLink != undefined) {
+        if (Adapt.course.get('_menuBackground')._backgroundLink != undefined || Adapt.course.get('_menuBackground')._backgroundLink === "") {
             $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuBackground')._backgroundLink + ')');
             $('.menu-container-inner').css('padding-bottom', '15%');
             $('.menu-container-inner').css('background-size', 'cover');
             $('.menu-container-inner').css('background-position-y', '200px');
         }
-
     });
 
     return menuBackground;
