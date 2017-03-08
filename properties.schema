@@ -13,33 +13,26 @@
         "course": {
           "type": "object",
           "properties": {
-            "_backgroundLink": {
+            "_menuBackground": {
               "type": "object",
               "required": false,
               "legend": "Menu Background",
               "properties": {
-                "_link": {
+                "_menuHeaderLink": {
                   "type": "string",
                   "required": true,
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
-                  "title": "Background for the page"
-                }
-              }
-            },
-            "_menuHeaderLink": {
-              "type": "object",
-              "required": false,
-              "legend": "Menu Background",
-              "properties": {
-                "_link": {
+                  "title": "Menu header image"
+                },
+                "_backgroundLink": {
                   "type": "string",
                   "required": true,
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
-                  "title": "Background for the header"
+                  "title": "Menu page background image"
                 }
               }
             }
