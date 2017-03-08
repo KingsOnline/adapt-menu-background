@@ -23,7 +23,6 @@
                   "required": false,
                   "default": "",
                   "inputType": "Asset:image",
-                  "validators": ["required"],
                   "title": "Menu header image"
                 },
                 "_backgroundLink": {
@@ -31,7 +30,6 @@
                   "required": false,
                   "default": "",
                   "inputType": "Asset:image",
-                  "validators": ["required"],
                   "title": "Menu page background image"
                 }
               }
