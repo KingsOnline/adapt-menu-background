@@ -18,22 +18,24 @@
               "required": false,
               "legend": "Menu Background",
               "properties": {
-                "_menuHeaderLink": {
+                "_menuHeader": {
                   "type": "object",
                   "required": false,
                   "legend": "Menu Header background",
-                  "_link": {
-                    "type": "string",
-                    "required": false,
-                    "default": "",
-                    "inputType": "Asset:image",
-                    "title": "Menu header image"
-                  },
-                  "_applyToPage": {
-                    "type": "Checkbox",
-                    "required": false,
-                    "default": "false",
-                    "title": "Apply to page too?"
+                  "properties": {
+                    "_link": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "title": "Menu header image"
+                    },
+                    "_applyToPage": {
+                      "type": "Checkbox",
+                      "required": false,
+                      "default": "false",
+                      "title": "Apply to page too?"
+                    }
                   }
                 },
                 "_backgroundLink": {
