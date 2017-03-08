@@ -21,7 +21,7 @@
                 "_menuHeader": {
                   "type": "object",
                   "required": false,
-                  "legend": "Menu Header background",
+                  "title": "Menu Header background",
                   "properties": {
                     "_link": {
                       "type": "string",
