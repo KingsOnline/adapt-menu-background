@@ -17,11 +17,10 @@ define(["coreJS/adapt"], function(Adapt) {
     });
     Adapt.on("menuView:ready", function() {
         console.log(Adapt.course.get('_menuBackground')._menuHeader._link);
-        if (!Adapt.course.get('_menuBackground')._menuHeader._link === "") {
+        if (!(Adapt.course.get('_menuBackground')._menuHeader._link === "")) {
             $('.menu-header').css('background', 'url(' + Adapt.course.get('_menuBackground')._menuHeader._link + ')');
-
         }
-        if (!Adapt.course.get('_menuBackground')._backgroundLink === "") {
+        if (!(Adapt.course.get('_menuBackground')._backgroundLink === "")) {
             $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuBackground')._backgroundLink + ')');
             $('.menu-container-inner').css('padding-bottom', '22%');
             $('.menu-container-inner').css('background-size', 'cover');
