@@ -2,7 +2,7 @@
     "name": "adapt-menu-background",
     "repository": "git://github.com/KingsOnline/adapt-menu-background",
     "framework": "^2.0.0",
-    "version": "0.2.11",
+    "version": "0.2.12",
     "homepage": "https://github.com/kingsonline/adapt-menu-background",
     "issues": "https://github.com/kingsonline/adapt-menu-background/issues",
     "displayName": "Menu Background",
